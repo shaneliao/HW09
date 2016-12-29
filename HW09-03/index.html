@@ -3,41 +3,47 @@
 <head>
    
     <script src="jquery-3.1.1.min.js"></script>
-    <script src="j3.js"></script>
     <meta charset="UTF-8">
 
     <title>Untitled Document</title>
 </head>
 <body>
 <table border="1">
-  <tr calss="d"><div class="d">
-      <td colspan="2"><a class="d">一起看看小王子留給我們與人生的六個關係練習</a></td>
-  </div>
-    
-  </tr>
-  
   <tr>
-    <td rowspan="2" class="c">與自己的關係</td>
-    <td class="c">每個人都有自己的孤單課題</td>
+    <td colspan="2">一起看看小王子留給我們與人生的六個關係練習</td>
   </tr>
-  <tr>
-    <td class="c">你不需要變成你不喜歡的大人</td>
+  <tr class="c">
+    <td rowspan="2">與自己的關係</td>
+    <td>每個人都有自己的孤單課題</td>
   </tr>
-  <tr>
-    <td rowspan="2" class="c">與愛人的關係</td>
-    <td class="c">從心甘情願豢養與被豢養開始</td>
+  <tr class="c">
+    <td>你不需要變成你不喜歡的大人</td>
   </tr>
-  <tr>
-    <td class="c">因為他是你的玫瑰</td>
+  <tr class="c">
+    <td rowspan="2">與愛人的關係</td>
+    <td>從心甘情願豢養與被豢養開始</td>
   </tr>
-  <tr>
-    <td rowspan="2" class="c">與世界的關係</td>
-    <td class="c">用「心」去尋覓你笑著的理由</td>
+  <tr class="c">
+    <td>因為他是你的玫瑰</td>
   </tr>
-  <tr>
-    <td class="c">分離的時候，學會道別</td>
+  <tr class="c">
+    <td rowspan="2">與世界的關係</td>
+    <td>用「心」去尋覓你笑著的理由</td>
+  </tr>
+  <tr class="c">
+    <td>分離的時候，學會道別</td>
   </tr>
 </table>
+<script id="jsbin-javascript">
+
+$("td[colspan='2']").click(
+function(){
+$(".c").fadeToggle(1000);
+$(this).show();
+});  
+
+
+</script>
 
 </body>
 </html>
